@@ -2,13 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image:url(images/fahim-profile1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 body
 {
     min-height: 100vh;
     background: #0c192c;
+    background: white;
+    background: rgb(243, 221, 193);
+    
 
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span{
+    color: red;
 }
 
 .container 
@@ -37,6 +69,15 @@ body
     0 0 50px #4fc3dc,
     0 0 100px #4fc3dc;
     animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
 }
 
 @keyframes animate {
