@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lora", sans-serif;
-    background-color: #191919;
 }
 
 .hero{
@@ -12,6 +11,7 @@
     background-image:url(images/fahim-profile1.png);
     background-size: cover;
     background-position: center;
+    background-color: #16141b;
 }
 
 nav{
@@ -51,9 +51,9 @@ nav ul li {
 
 body    {   
     min-height: 100vh;
-    background: #0c192c;
+    
     background: white;
-    background: rgb(243, 221, 193);
+  
     
 
 }
@@ -137,10 +137,12 @@ h4  {
     right: 6px;
 }
 
+
+
 .about{
     width: 100%;
     padding: 100px 0px;
-    background-color: #191919;
+    background-color: #242229;
 }
 
 .about img{
@@ -199,61 +201,106 @@ button{
 }
 
 button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+}
+    
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4;
+
+}
+
+button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
 
+.service{
+    background: #101010;
+    color: white;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+ }
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+
+}
+
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4;
+
+}
+
+
 footer  {
     background-color: #7D7A7A;
     text-align: center;
     color: rgb(252, 255, 252);
-}
-
-.container 
-{
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    overflow: hidden; 
-}
-
-.bubbles
-{
-    position: relative;
-    display: flex;
-}
-
-.bubbles span
-{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc;
-    margin: 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44,
-    0 0 50px #4fc3dc,
-    0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
-}
-
-.bubbles span:nth-child(even)
-{
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #4fc3dc,
-    0 0 100px #4fc3dc;
-}
-
-@keyframes animate {
-    0%    {
-        transform: translateY(100vh) scale(0);
-    }
-
-    100%    {
-        transform: translateY(-10vh) scale(1);
-    }
-    
 }
