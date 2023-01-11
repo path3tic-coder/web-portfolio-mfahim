@@ -225,8 +225,7 @@ button:hover{
 }
 
 .service{
-    background: #101010;
-    color: white;
+    background: #101010;   
     width: 100%;
     padding: 100px 0px;
 
@@ -271,7 +270,6 @@ button:hover{
 
 }
 
-
 h5{
     color: white;
     font-size: 23px;
@@ -285,6 +283,7 @@ h5{
     margin-bottom: 25px;
 }
 
+
 .card .button{
     
     background-color: #f9004d;
@@ -292,12 +291,16 @@ h5{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 9px 22px;
+    padding: 9px 2px;
     border-radius: 30px;
     transition: .4;
-
 }
 
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
 
 footer  {
     background-color: #7D7A7A;
