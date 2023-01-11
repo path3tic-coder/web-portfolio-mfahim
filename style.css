@@ -348,3 +348,51 @@ footer  {
     justify-content: center;
 
 }
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social{
+    display: flex;
+
+}
+
+.social a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(255, 252, 87);
+    text-decoration: none;
+    font-size: 33px;
+}
+
+.social a:hover{
+    transform: scale(1.5);
+    transition: .5s;
+
+}
+
+.end{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
